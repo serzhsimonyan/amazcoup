@@ -1,0 +1,31 @@
+.banner {
+  &-img {
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+  }
+  &--lg-title {
+    color: #333333;
+    font: 600 55px $primaryFontFamilyBold;
+  }
+  &--title {
+    font: 45px $primaryFontFamily;
+  }
+  &--txt {
+    max-width: 620px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.bottom-section {
+  padding: 0;
+  color: $primaryColor-02;
+  background: url(../images/img.jpg) no-repeat center left/50% $lightGreyBg;
+  min-height: 550px;
+  .bottom-txt {
+    padding: 100px 15px 100px 100px;
+    color: $primaryColor-02;
+  }
+}

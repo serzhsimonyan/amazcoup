@@ -1,0 +1,237 @@
+@media only screen and (min-width: 1501px) {
+  .product {
+    @include calc(width, #{100% / 6});
+  }
+
+  .sidebar {
+    & + .product--list {
+      .product {
+        @include calc(width, #{100% / 5});
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .product {
+    @include calc(width, #{100% / 4});
+    &--desc {
+      min-height: 90px;
+    }
+    &--img {
+      height: 195px;
+    }
+  }
+  .sidebar {
+    & + .product--list {
+      .product {
+        &--img {
+          height: 140px;
+        }
+      }
+    }
+  }
+  .filter-list a {
+    padding: 4px 15px;
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 1400px) {
+  .product {
+    &--btn {
+      font-size: 12px;
+    }
+    &--desc {
+      min-height: 110px;
+    }
+    &--img {
+      height: 110px;
+    }
+  }
+  .sidebar {
+    & + .product--list {
+      .product {
+        &--img {
+          height: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $desktop-sm-min) {
+  .product {
+    &--list {
+      padding: 0 15px 20px;
+    }
+    &--desc {
+      min-height: 90px;
+    }
+  }
+  .navbar-dark .main-menu.navbar-nav a.nav-link {
+    padding: 10px;
+  }
+  .sidebar {
+    width: 200px;
+    padding: 30px 15px;
+    font-size: 15px;
+    & + .product--list {
+      @include calc (width, (100% - #{200px}));
+      .product {
+        @include calc(width, #{100% / 4});
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-max) {
+  .product {
+    @include calc(width, #{100% / 4});
+  }
+  .container {
+    max-width: 100%;
+  }
+  .filter-list {
+    padding: 30px;
+  }
+  .footer {
+    .container {
+      padding: 0 30px;
+    }
+  }
+  .sidebar {
+    & + .product--list {
+      .product {
+        @include calc(width, #{100% / 3});
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-sm-max) {
+  .search--form {
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-flow(row)
+  }
+  .navbar-dark .main-menu.navbar-nav a.nav-link {
+    padding: 10px 0;
+  }
+  .footer--list {
+    width: auto;
+    padding: 0 15px;
+  }
+  .product {
+    &--img {
+      height: 170px;
+    }
+  }
+  .sidebar {
+    & + .product--list {
+      .product {
+        @include calc(width, #{100% / 2});
+        &--img {
+          height: 250px;
+        }
+      }
+    }
+    .main-list {
+      padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-max) {
+  .product {
+    @include calc(width, #{100% / 3});
+    &--img {
+      height: 170px;
+      object-fit: cover;
+    }
+  }
+  .filter-list {
+    padding: 20px 0;
+    a {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  .footer {
+    .container {
+      padding: 0 30px;
+    }
+  }
+  .btn--main {
+    font-size: 12px;
+  }
+  .bottom-section {
+    background-image: none;
+  }
+  .sidebar {
+    display: none;
+    & + .product--list {
+      width: 100%;
+      padding: 0;
+      .product {
+        @include calc(width, #{100% / 3});
+      }
+    }
+  }
+  .title {
+    &--main {
+      font: 600 32px Calibri, sans-serif;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-min) {
+  .product, .sidebar + .product--list .product {
+    @include calc(width, #{100% / 2});
+    &--list {
+      padding: 0 0 20px;
+    }
+    &--img {
+      height: 200px;
+    }
+  }
+  .filter-list {
+    padding: 20px 0;
+    a {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  .footer {
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-sm-max) {
+  .product, .sidebar + .product--list .product {
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    &--list {
+      padding: 0 0 20px;
+    }
+    &--title {
+      text-align: center;
+    }
+    &--desc {
+      min-height: 0;
+    }
+    &--img {
+      height: auto;
+    }
+  }
+
+  .footer {
+    .container {
+      text-align: center;
+    }
+  }
+}

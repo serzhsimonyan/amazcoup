@@ -1,0 +1,43 @@
+//Colors
+$primaryColor-01: #ffaa30;
+$primaryColor-02: #162537;
+$primaryColor-03: #716f6f;
+$lightwhite: #fff;
+$primaryTxtColor: #030403;
+$lightBg: #f5f5f5;
+$shadow: #eaeaea;
+
+$closeColor: #ff6465;
+$checkColor: #3bc838;
+$lightGreyBg: #f7f7f7;
+$borderColor: #e1e1e1;
+$darkBorderColor: #b2bcc4;
+$lightBorderColor: #dedede;
+
+//Widths
+$container: 1430px;
+$btnMinWidth: 125px;
+$sidebarWidth: 250px;
+
+//Fonts
+$primaryFontFamilyBold: 'Roboto', sans-serif;
+$primaryFontFamily: 'Corbel', sans-serif;
+$mainFontSize: 16px;
+$primaryFont: $mainFontSize $primaryFontFamilyBold;
+//Paddings
+$layoutRowPDG: 120px 0;
+
+//Footer
+$footer-height: 220px;
+
+//Responsive Media Queries
+$desktop-sm-min: 1200px;
+$desktop-sm-max: 1199px;
+$tablet-max: 1024px;
+$tablet-min: 992px;
+$tablet-sm-max: 991px;
+$tablet-sm-min: 768px;
+$mobile-max: 767px;
+$mobile-min: 576px;
+$mobile-sm-max: 482px;
+$mobile-sm-min: 320px;

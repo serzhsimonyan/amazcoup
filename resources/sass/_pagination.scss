@@ -1,0 +1,14 @@
+.pagination {
+  margin-top: 25px;
+}
+
+.page-link {
+  color: $primaryTxtColor;
+  &:hover {
+    color: $primaryColor-01;
+  }
+}
+.page-item.active .page-link {
+  background-color: $primaryColor-01;
+  border-color: $primaryColor-01;
+}

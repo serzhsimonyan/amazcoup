@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 15px;
+  border: 1px solid $lightBorderColor;
+
+  &--list {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    list-style-type: none;
+    &-heading {
+      font: 600 17px Calibri, sans-serif;
+      margin-bottom: 15px;
+    }
+    a {
+      color: $primaryTxtColor;
+      padding: 3px 0;
+      display: block;
+    }
+    .active {
+      a {
+        color: $primaryColor-01;
+      }
+    }
+  }
+}
+
+@include sticky-footer($footer-height);

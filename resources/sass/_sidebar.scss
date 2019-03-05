@@ -1,0 +1,46 @@
+.sidebar {
+  width: $sidebarWidth;
+  display: inline-block;
+  padding: 30px 0;
+  font: 600 16px/1 $primaryFontFamilyBold;
+  & + .product--list {
+    @include calc (width, (100% - #{$sidebarWidth}));
+    //@include inline-flex();
+    display: inline-block;
+    padding: 0 0 0 15px;
+    .product {
+      &--img {
+        height: 205px;
+      }
+    }
+  }
+  .card {
+    //background: transparent;
+    background: transparent;
+    border: 0 none;
+    padding: 0;
+    &-header {
+      background: transparent;
+      border: 0 none;
+      padding: 0;
+    }
+    &-body {
+      padding: 0;
+    }
+    &-link {
+      color: $primaryColor-01;
+      &.collapsed {
+        color: $primaryTxtColor;
+      }
+    }
+  }
+  a {
+    color: $primaryTxtColor;
+    padding: 10px 0;
+    display: block;
+    white-space: normal;
+  }
+  .main-list {
+    padding-left: 20px;
+  }
+}

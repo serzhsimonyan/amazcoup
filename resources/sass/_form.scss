@@ -1,0 +1,62 @@
+.search {
+  &--form {
+    position: relative;
+    border: 1px solid $lightBorderColor;
+    width: 240px;
+    input {
+      border: 0 none;
+      background-color: transparent;
+      @include border-radius(0);
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      color: #fff;
+      width: calc(100% - 45px) !important;
+
+      &:focus {
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        color: #fff;
+      }
+    }
+    @include placeholder {
+      color: $lightwhite;
+    }
+  }
+  &--btn {
+    background-color: transparent;
+    border: 0 none;
+    color: $lightwhite;
+    padding: 7px 10px;
+  }
+}
+
+.btn {
+  &--secondary {
+    background-color: $primaryColor-03;
+    min-width: 300px;
+    color: #ffffff;
+    font: 600 23px $primaryFontFamilyBold;
+    text-transform: uppercase;
+    padding: 20px;
+  }
+  &--main {
+    background-color: $primaryColor-01;
+    font: $primaryFont;
+    color: $lightwhite;
+    padding: 12px 11px;
+  }
+}
+
+.contact-form {
+  background-color: $lightGreyBg;
+  padding: 40px 20px;
+  &--inner {
+    max-width: 630px;
+    margin: auto;
+  }
+}

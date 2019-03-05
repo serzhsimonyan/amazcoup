@@ -1,0 +1,44 @@
+.header {
+  &--top {
+    padding: 15px 0;
+    background: $lightwhite;
+  }
+  &--main {
+    background-color: $primaryColor-02;
+  }
+}
+
+.navbar-dark {
+  .main-menu {
+    &.navbar-nav {
+      a {
+        &.nav-link {
+          color: $lightwhite;
+          font: 15px $primaryFontFamilyBold;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+      .active > .nav-link {
+        color: $primaryColor-01;
+      }
+    }
+  }
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.main-menu-dropdown {
+  background-color: transparent;
+  border: 0 none;
+  color: $lightwhite;
+  padding: 10px;
+  font: 15px $primaryFontFamilyBold;
+  &  + .dropdown-menu .dropdown-item {
+    &:hover {
+      color: $primaryColor-01;
+    }
+  }
+}
